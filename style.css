@@ -69,6 +69,108 @@ body{
     font-size: 15px;
 }
 .box .summary{
+    
     width: 50%;
     height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    padding: 30px;
+    gap: 1.5rem;
+}
+.summary h1{
+    color:hsl(224, 30%, 27%);
+    font-size: 20px;    
+}
+.summaryBlocks{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.red{
+    background-color: hsla(0, 100%, 67%,.1);  
+    color: hsl(0, 100%, 67%);     
+}
+.reaction{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.yellow{
+    background-color: hsla(39, 100%, 56%,.1);  
+    color: hsl(39, 100%, 56%);     
+}
+.memory{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.green{
+    background-color: hsla(166, 100%, 37%,.1);  
+    color: hsl(166, 100%, 37%);     
+}
+.verbal{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.blue{
+    background-color: hsla(234, 85%, 45%,.1);  
+    color: hsl(234, 85%, 45%);     
+}
+.visual{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.block{
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.number{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: bold;
+}
+.number .score{
+    color:hsl(224, 30%, 27%);
+}
+.number span{
+    color:grey;
+}
+.btn{
+    text-align: center;
+    height: 50px;
+    border-radius: 30px;
+    border-style: none;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+}
+.btn:hover{
+    background-image:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%)) ;
+}
+@media only screen and (max-width: 600px){
+    .box{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }  
+    .box .result{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+    }
+    .box .summary{
+        width: 100%;
+    }
 }
